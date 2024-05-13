@@ -5,4 +5,6 @@
     <color name="main_color">#252B45</color>
     <color name="dark_blue">#414863</color>
     <color name="red">#D74342</color>
+    <color name="my_primary">#5E35B1</color>
+    <color name="my_secondary">#643AB7</color>
 </resources>
