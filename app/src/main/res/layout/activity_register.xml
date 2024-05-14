@@ -73,6 +73,20 @@
                 android:layout_height="wrap_content"
                 android:hint="InputEmail"
                 android:drawableEnd="@drawable/baseline_done_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:alpha="0.7"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập họ và tên"
+                android:drawableEnd="@drawable/baseline_done_24"/>
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"/>
