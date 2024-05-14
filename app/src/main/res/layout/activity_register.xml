@@ -33,7 +33,7 @@
             android:textSize="32dp"
             android:textColor="@color/white"/>
     </LinearLayout>
-    
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please login with your information"
+                android:text="Please register with your information"
                 android:alpha="0.7"/>
             <View
                 android:layout_width="wrap_content"
@@ -68,10 +68,10 @@
                 android:textStyle="bold"
                 android:alpha="0.7"/>
             <EditText
-                android:id="@+id/inputUsername"
+                android:id="@+id/resgister_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="textUsername"
+                android:hint="InputEmail"
                 android:drawableEnd="@drawable/baseline_done_24"/>
             <View
                 android:layout_width="wrap_content"
@@ -83,46 +83,22 @@
                 android:textStyle="bold"
                 android:alpha="0.7"/>
             <EditText
-                android:id="@+id/inputPassword"
+                android:id="@+id/register_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="textPassword"
                 android:drawableEnd="@drawable/password_icon"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Remember me"
-                    android:layout_centerVertical="true"
-                    android:alpha="0.7"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I forgot my password"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-            </RelativeLayout>
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnSignin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login"
+                android:text="Sign In"
                 android:textColor="@color/white"
                 app:cornerRadius="32dp"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Or Login With"
-                android:layout_gravity="center"
-                android:alpha="0.7"/>
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
@@ -133,13 +109,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bạn chưa có tài khoản? "
+                    android:text="Bạn đã có tài khoản? "
                     />
                 <TextView
-                    android:id="@+id/text_signup"
+                    android:id="@+id/text_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đăng ký"
+                    android:text="Đăng nhập"
                     android:textColor="@color/my_primary"
                     />
             </LinearLayout>

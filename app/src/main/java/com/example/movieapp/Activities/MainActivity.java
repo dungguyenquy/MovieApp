@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
                     for (DataSnapshot issue:snapshot.getChildren()){
                         items.add(issue.getValue(Film.class));
                         Film test=issue.getValue(Film.class);
-                        Log.d("Loi","Check1:"+test.getGenre());
-                        Log.d("Loi","Check2:"+test.getCasts());
                     }
                     if(!items.isEmpty()){
                         binding.recyclerViewUpcomming.setLayoutManager(new LinearLayoutManager(MainActivity.this,
