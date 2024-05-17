@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MovieApp"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.AddBannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpDelBannerActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.AdminActivity"
             android:exported="false" />
         <activity

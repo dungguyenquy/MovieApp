@@ -1,7 +1,6 @@
-package com.example.movieapp.Domains;
+package com.example.movieapp.Model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class Film implements Serializable {
     private String Title;
@@ -11,11 +10,12 @@ public class Film implements Serializable {
     private String Trailer;
     private int Imdb;
     private int Year;
-    private ArrayList<String> Genre;
-    private ArrayList<Cast> Casts;
+    private String Genre;
+    private String Casts;
 
     public Film() {
     }
+
 
     public String getTitle() {
         return Title;
@@ -65,19 +65,19 @@ public class Film implements Serializable {
         Year = year;
     }
 
-    public ArrayList<String> getGenre() {
+    public String getGenre() {
         return Genre;
     }
 
-    public void setGenre(ArrayList<String> genre) {
+    public void setGenre(String genre) {
         Genre = genre;
     }
 
-    public ArrayList<Cast> getCasts() {
+    public String getCasts() {
         return Casts;
     }
 
-    public void setCasts(ArrayList<com.example.movieapp.Domains.Cast> casts) {
+    public void setCasts(String casts) {
         Casts = casts;
     }
 

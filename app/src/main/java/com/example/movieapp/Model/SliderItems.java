@@ -1,6 +1,8 @@
-package com.example.movieapp.Domains;
+package com.example.movieapp.Model;
 
-public class SliderItems {
+import java.io.Serializable;
+
+public class SliderItems implements Serializable {
     private String image;
     private String name;
     private String genre;
@@ -9,6 +11,15 @@ public class SliderItems {
     private String time;
 
     public SliderItems() {
+    }
+
+    public SliderItems(String image, String name, String genre, String age, String year, String time) {
+        this.image = image;
+        this.name = name;
+        this.genre = genre;
+        this.age = age;
+        this.year = year;
+        this.time = time;
     }
 
     public String getImage() {

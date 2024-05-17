@@ -18,10 +18,9 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.movieapp.Adapters.FlimListAdapter;
 import com.example.movieapp.Adapters.SlidersAdapter;
-import com.example.movieapp.Domains.Film;
-import com.example.movieapp.Domains.SliderItems;
+import com.example.movieapp.Model.Film;
+import com.example.movieapp.Model.SliderItems;
 import com.example.movieapp.databinding.ActivityMainBinding;
-import com.google.firebase.Firebase;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 if(snapshot.exists()){
                     for (DataSnapshot issue:snapshot.getChildren()){
                         items.add(issue.getValue(Film.class));
-                        Film test=issue.getValue(Film.class);
                     }
                     if(!items.isEmpty()){
                         binding.recyclerViewUpcomming.setLayoutManager(new LinearLayoutManager(MainActivity.this,
@@ -91,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 if(snapshot.exists()){
                     for (DataSnapshot issue:snapshot.getChildren()){
                         items.add(issue.getValue(Film.class));
+                        Log.d("Loi1","Checklist:"+issue.getValue(Film.class).getTitle());
                     }
                     if(!items.isEmpty()){
                         binding.recyclerViewTopMovies.setLayoutManager(new LinearLayoutManager(MainActivity.this,

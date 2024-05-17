@@ -92,13 +92,19 @@
                             app:srcCompat="@drawable/bookmark" />
                     </LinearLayout>
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/genreView"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp" />
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Genre"/>
+                    <TextView
+                        android:id="@+id/genreTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Genre"/>
 
                     <View
                         android:id="@+id/view"
@@ -157,10 +163,12 @@
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/CastView"
+                    <TextView
+                        android:id="@+id/castsTxt"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
                         android:layout_weight="1"
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp" />

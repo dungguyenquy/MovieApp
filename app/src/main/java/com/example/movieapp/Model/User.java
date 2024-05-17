@@ -1,4 +1,4 @@
-package com.example.movieapp.Domains;
+package com.example.movieapp.Model;
 
 public class User {
     private String uid;
